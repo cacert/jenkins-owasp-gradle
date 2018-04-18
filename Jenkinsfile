@@ -12,12 +12,6 @@ pipeline{
                 sh 'gradle clean test'
             }
         }
-        stage('package'){
-
-                    steps{
-                        sh 'gradle build'
-                    }
-                }
         stage ('OWASP Dependency Check'){
             steps {
 
